@@ -6,5 +6,5 @@ frontend and backend are connected seperately
 - facebook
 
 ### setting up git 
-- git config --global user.name m-triple-m
-- git config --global user.email m-triple-m
+- git config --global user.name <yourusername>
+- git config --global user.email <youremail>
