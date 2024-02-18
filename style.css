@@ -1,0 +1,13 @@
+.main-btn{
+    padding:10px 20px;
+background-color: lavender;
+border: none;
+border-radius: 5px;
+}
+.footer-btn{
+    background-color: transparent;
+    color: lavender;
+    /* both name selectors are same , both have same property, always the 2nd class overwrites the first class */
+border: 2px solid lavender;
+margin-top:20px;
+}
