@@ -22,7 +22,7 @@
         <header>
             <!-- place navbar here -->
             <nav
-                class="navbar navbar-expand-sm navbar-dark bg-black"
+                class="navbar navbar-expand-md navbar-dark bg-black"
             >
                 <div class="container">
                     <a class="navbar-brand" href="#">Navbar</a>
@@ -38,7 +38,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#" aria-current="page"
                                     >Home
@@ -89,7 +89,51 @@
             </nav>
             
         </header>
-        <main></main>
+        <main class="container-fluid">
+            <div class="row align-items-center vh-100 ">
+            <div class="col-sm-8 col-md-6 col-xl-3 mx-auto">
+           <div class="card shadow-lg">
+            <div class="card-body">
+                <img  class="mx-auto d-block my-4 "height="150" src="./pandey--associates-high-resolution-logo-transparent.png">
+                <h5 class="text-center">Login Form</h5>
+
+                <form action="">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="Your Email"
+                            aria-describedby="helpId"
+                        />
+                        <small id="helpId" class="text-muted">Enter Registered Email</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <input
+                            type="password"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="Your Password"
+                            aria-describedby="helpId"
+                        />
+                        <small id="helpId" class="text-muted">Above 6 characters </small>
+                    </div>
+                    <button class="btn btn-primary mt-4 w-100">
+                Submit
+                    </button>
+                    
+
+
+                </form>
+            </div>
+           </div> 
+        </div>
+    </div>
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
