@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* css variables */
+      /* root means apply scope to whole page  */
+      :root {
+        --theme-color-primary: rgb(231 117 45);
+        --theme-color-secondary: #f7ebe8;
+        --theme-color-accent: #ffa987;
+        --theme-color-dark: #1b1b3a;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        color: var(--theme-color-dark);
+      }
+
+      header {
+        background-image: url("https://png.pngtree.com/background/20230618/original/pngtree-a-modern-and-chic-house-showcased-in-3d-during-a-picturesque-picture-image_3749638.jpg");
+        /* background-image: url('https://source.unsplash.com/1680x1050/?art,books'); */
+        height: 100vh;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.853);
+      }
+      .hero-subtitle {
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.853);
+      }
+      .section-features {
+        padding: 50px 100px;
+        /* padding: top/bottom left/right */
+        /* x axis y axis */
+      }
+      .section-title {
+        text-align: center;
+        font-size: 40px;
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        /* gap works only with flex */
+      }
+      .feature-card {
+        /* border: 2px solid purple; */
+        text-align: center;
+        padding: 30px;
+        width:500px;
+        
+        transition-duration: 0.5s;
+      }
+      .feature-card:hover {
+        
+        background-color: var(--theme-color-accent);
+        background-blend-mode:soft-light;
+      }
+      .card-text {
+        
+        text-align: justify;
+      }
+      /* pseudo classes are for states  */
+
+      .section-video {
+        padding: 50px 100px;
+        
+
+      }
+      .videos-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .section-video video {
+        width: 100%;
+        height: 100%;
+      }
+      .section-contact {
+        padding: 50px 300px;
+      }
+      .text-input,
+      .text-input-area {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        border: 1px solid;
+      }
+      .text-input:focus,
+      .text-input-area:focus {
+        outline: none;
+        border-color: var(--theme-color-primary);
+      }
+      .text-input::placeholder,
+      .text-input-area::placeholder {
+        color: rgb(121, 72, 125);
+        font-family: Poppins;
+      }
+      .text-input-area {
+        resize: vertical;
+      }
+      .contact-btn {
+        padding: 10px 20px;
+        background-color: var(--theme-color-dark);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .contact-btn:hover {
+        background-color: var(--theme-color-accent);
+        color: var(--theme-color-dark);
+      }
+      footer {
+        padding: 50px 100px;
+        display: grid;
+        /* grid-template-columns:400px 600px; */
+        grid-template-columns: 2fr 1fr 1fr;
+        /* using grid we can give cols and rows number  */
+        /* fr is a frational ratio */
+        gap: 30px;
+        background-color: var(--theme-color-dark);
+        color: lavender;
+      }
+      .footer-link {
+        color: lavender;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .social-link {
+        color: lavender;
+        font-size: 20px;
+      }
+      .footer-link:hover {
+        transform: translateY(-5px);
+      }
+      .social-link-group {
+        display: flex;
+        column-gap: 10px;
+      }
+      .social-link:hover {
+        transform: scale(1.3) translateY(-10px);
+        /* transform property over write if declared again , so declare in one line  */
+        /* to increase size on hover use 1.4 ... to decrease size use 0.5,,,0.3.. */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-title">Pandey & Associates</h1>
+      <h3 class="hero-subtitle">Bringing your dream homes to Life</h3>
+    </header>
+    <main>
+      <section class="section-features">
+        <h2 class="section-title">Our Services</h2>
+        <div class="card-container">
+          <div class="feature-card">
+            <i class="fa-5x fa-solid  fa-person-digging"></i>
+            <h3>Construction</h3>
+            <p class="card-text">
+              We provide the best construction services in the town. We have a
+              team of experts who are dedicated to their work and provide the
+              best quality work.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-5x fa-solid fa-brush"></i>
+            <h3>Interior Design</h3>
+            <p class="card-text">
+              Providing classic and elegant interiors for your dream homes and
+              offfices with the best quality material and work.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-5x fa-solid fa-screwdriver-wrench"></i>
+            <h3>Planning & Estimation</h3>
+            <p class="card-text">We make budget and material plans for your homes </p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-5x fa-solid fa-pen-nib"></i>
+            <h3>Repair</h3>
+            <p class="card-text">
+              All kinds of repair services from plumbing to electrical to
+              carpentry. We provide the best repair services in the town.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-video">
+        <h2 class="section-title">Our Work</h2>
+        <div class="videos-section">
+        <video src="houses.mp4"  autoplay muted loop></video>
+        <video src="home.mp4"  autoplay muted loop></video>
+        <video src="interior.mp4"  autoplay muted loop></video>
+        <video src="interior2.mp4"  autoplay muted loop></video>
+      </div>
+      </section>
+      <section class="section-contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+          <label>Name</label>
+          <input placeholder="Your Name " type="text" class="text-input" />
+          <label>Email</label>
+          <input placeholder="Your Email" type="email" class="text-input" />
+          <label>Contact No </label>
+          <input placeholder="Your Number" type="number" class="text-input" />
+          <label>Message</label>
+          <textarea
+            placeholder="Your Query"
+            cols="30"
+            rows="10"
+            class="text-input-area"
+          ></textarea>
+          <button class="contact-btn">SUBMIT</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h3>Pandey & Associates</h3>
+        <p>&copy;2024, All Rights Reserved</p>
+        <p>
+          Built and Maintained by Siya Pandey
+        </p>
+
+        <div class="social-link-group">
+          <a class="social-link" href=""
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a class="social-link" href=""
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a class="social-link" href=""
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <button class="main-btn footer-btn">Learn more</button>
+      </div>
+      <div>
+        <h5>Important Links</h5>
+        <a href="" class="footer-link">Home</a>
+        <a href="" class="footer-link">About Us</a>
+        <a href="" class="footer-link">Services</a>
+        <a href="" class="footer-link">Projects</a>
+        </div>
+        <div>
+        <h5>More Links</h5>
+        <a href="" class="footer-link">Team</a>
+        <a href="" class="footer-link">Contact Us</a>
+        <a href="" class="footer-link">Blog</a>
+        <a href="" class="footer-link">Careers</a>
+        </div>
+    </footer>
+  </body>
+</html>
