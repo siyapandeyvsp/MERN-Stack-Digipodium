@@ -26,3 +26,19 @@ note
 - if you want 2 buttons to stay beside each other in mobile also just use @ col
 - container class in bootstrap adds margin from both side and keeps expanding from both sides
 -fs-1 23 4 5 are for font size similar to h1 h2 ..
+# JAVASCRIPT
+ - es stands for ecma script 
+ - runtime for javascript : 
+ - bun .js
+ - node.js by Ryan Dahl
+ - deno (more secure than node.js built by the developer of node js)
+ - aws has a built 1  
+ - node --watch filename : continuously run a file 
+### Datatypes
+ - Number
+ - String
+ - boolean
+ - null
+ - undefined
+
+### definition keyword
