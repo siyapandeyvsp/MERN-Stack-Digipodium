@@ -42,3 +42,9 @@ note
  - undefined
 
 ### definition keyword
+ - var
+ - let 
+ -const
+ 
+ -- javascript has only Number data type by default so we need to do parseInt() to get int values
+  
