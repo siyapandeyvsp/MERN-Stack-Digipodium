@@ -32,3 +32,10 @@
 
 
  - login/login.module.css will be a local css file  
+
+ -difference between function pass / function call # in eventHandling
+ -- ... is a spread operator used to extract out all the elements of an array 
+ -- to have an array and a setArray is called destructuing
+
+
+ /// create a comment system 
