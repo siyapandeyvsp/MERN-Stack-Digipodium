@@ -36,6 +36,48 @@
  -difference between function pass / function call # in eventHandling
  -- ... is a spread operator used to extract out all the elements of an array 
  -- to have an array and a setArray is called destructuing
-
-
+10/03/2024
+homework for 
  /// create a comment system 
+ 17/03/2024
+
+ create delete function : use splice method on temp array and ...temp set this in Task array 
+#### Conditional rendering 
+
+###### interpolated strings : using backticks `backticks `
+
+## Form Handling 
+ - use formik library
+ - use either id or name for field name reading in formik
+ - handleSubmit is provided handleChange is provided , these provide functionality 
+ - Yup is a npm package used for validations
+
+ --latest update in nodeJs for environment variable ".env " is a package
+
+
+
+
+ # connection 
+ - create form 
+ - fetch request
+ - ## Request methods : (http requests)
+  - server decides which request will the client send 
+   - 1. GET : to fetch / read the data
+        - not secured 
+        - data is sent in url (history ,bookmark, shown everywhere)
+        - only string data not json 
+
+   - 2. POST: to store the data 
+        - body or any other format 
+   - 3. PUT : to update the data 
+   - 4. DELETE : to delete the data 
+
+give url for reqest , 
+type of request 
+body:values 'what to send'
+- send data in json : json.stringify
+
+ . no-CORS : servers at different origin (3000,5000) dont allow cross origin
+  for this , npm i cors at backend
+
+
