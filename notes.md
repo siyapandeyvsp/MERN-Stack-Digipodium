@@ -80,4 +80,28 @@ body:values 'what to send'
  . no-CORS : servers at different origin (3000,5000) dont allow cross origin
   for this , npm i cors at backend
 
+  30/03/24
+
+  - add toast for showing all status code responses
+     - import in layout of the project
+     - add in every request in thenc code 
+// then catch for promise async only for either then either catch run s
+async await then use try catch  error always try runs 
+ 
+
+ ### HOOKS 
+ to manage lifecycle of components 
+ hook is fixed 
+
+
+#### useEffect ()
+ - page open hote hi load ho
+ - used for autosave
+ - close hone k just phle
+ - on every change save
+  
+
+  homwork create signup form userRouter crete 
+
+  -- onClick me callback nhi lgae to apne ap run hojata bcz jsx k sare function run hote , onclick me b jo likha hoga to run hojaega , if callback lga hota to onClick me function ka return data store rhta (already run hoke ) and click krne pe chal jata bs 
 
