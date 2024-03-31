@@ -55,6 +55,16 @@ const Navbar = () => {
                 Upload Post
               </Link>
             </li>
+            <li className="nav-item ">
+              <Link href="/feed" className="nav-link">
+                Feed
+              </Link>
+            </li>
+            <li className="nav-item ">
+              <Link href="/users" className="nav-link">
+                Show Users 
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

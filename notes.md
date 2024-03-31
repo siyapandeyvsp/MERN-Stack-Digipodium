@@ -105,3 +105,11 @@ async await then use try catch  error always try runs
 
   -- onClick me callback nhi lgae to apne ap run hojata bcz jsx k sare function run hote , onclick me b jo likha hoga to run hojaega , if callback lga hota to onClick me function ka return data store rhta (already run hoke ) and click krne pe chal jata bs 
 
+
+
+-- react time ago needs to be put in template and useEffect to set the locale time (locale is the reference )
+
+### ui framework
+ui website : tailwind ,logic project : mui , mantine , chakra 
+
+documentation website , library , : use mantine 
